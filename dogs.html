@@ -1,0 +1,45 @@
+<!-- dogs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dogs - Class Activities</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Dog Browser</h1>
+    <div id="dogCarousel" class="slider"></div>
+
+    <h2>Dog Breeds</h2>
+    <div id="breedButtons"></div>
+
+    <section id="breedInfo" style="display: none;">
+      <h3 id="breedName"></h3>
+      <p id="breedDesc"></p>
+      <p>Life Span: <span id="lifeMin"></span> - <span id="lifeMax"></span> years</p>
+    </section>
+  </main>
+
+  <section id="audioControls">
+    <h2>Voice Commands</h2>
+    <p>Say "Hello"<br>Say "Change the color to green"<br>Say "Navigate to Stocks"<br>Say "Load Dog Breed Poodle"</p>
+    <button onclick="annyang.start()">Turn On Audio</button>
+    <button onclick="annyang.abort()">Turn Off Audio</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-slider"></script>
+  <script src="js/annyang-setup.js"></script>
+  <script src="js/dogs.js"></script>
+</body>
+</html>
