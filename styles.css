@@ -1,0 +1,118 @@
+/* css/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+}
+
+nav li {
+  flex: 1;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #111;
+}
+
+main {
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#quoteBox {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-left: 4px solid #007BFF;
+  font-style: italic;
+}
+
+#audioControls {
+  background-color: #eee;
+  padding: 15px;
+  border-top: 2px solid #ccc;
+  margin-top: 30px;
+}
+
+canvas {
+  margin-top: 20px;
+  max-width: 100%;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#dogCarousel img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+#breedButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.breed-btn {
+  background-color: #28a745;
+}
+
+#breedInfo {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 15px;
+  border-left: 5px solid #28a745;
+}
+
+.breed-btn:hover {
+  background-color: #1e7e34;
+}
